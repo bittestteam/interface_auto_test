@@ -65,7 +65,7 @@ class httpConfig:
             s = requests.session()
             s.keep_alive = False
             response = s.get(url,verify = False,headers=self.headers)
-            return response
+            return json.loads(response.text)
 
         except Exception as e:
             #print('%s' % e)

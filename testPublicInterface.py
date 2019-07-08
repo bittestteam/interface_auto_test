@@ -17,7 +17,7 @@ from ddt import ddt, data
 
 
 @ddt
-class testInterface(unittest.TestCase):
+class testPublicInterface(unittest.TestCase):
 
 
     #必须使用@classmethod 装饰器,所有test运行前运行一次
